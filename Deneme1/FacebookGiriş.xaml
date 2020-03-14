@@ -1,0 +1,41 @@
+﻿<Page x:Class="Deneme1.FacebookGiriş"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Deneme1"
+      mc:Ignorable="d"
+      Title="FacebookGiriş" Width="310" Height="450">
+
+    <Grid Margin="0,-14,4,-131">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="2,1,6,130" Foreground="{x:Null}" Background="#FFD4CCCC">
+            <Grid Height="88" Width="332" VerticalAlignment="Top" Background="#FF1352AC">
+                <Button Content="Giriş Yap" Margin="44,356,100,-303" Background="#FF0E22A4" FontSize="20" BorderBrush="{x:Null}" Foreground="White" RenderTransformOrigin="0.494,-0.298" Click="Button_Click_1"/>
+                <Label Content="" Margin="77,98,124,-61" Foreground="{x:Null}">
+                    <Label.Background>
+                        <ImageBrush ImageSource="images\indir.jpg"/>
+                    </Label.Background>
+                </Label>
+                <Label Content="Şifre" Margin="18,284,-18,-224"/>
+                <Label Content="E-posta" Margin="12,228,-12,-176"/>
+
+                <TextBlock TextWrapping="Wrap" Margin="46,154,88,-140" Foreground="#FF877777" FontSize="16"><Run Text="DR Dünyasına Bağlan'a bağlanmak için Facebook      hesabına giriş yap"/></TextBlock>
+                <TextBox Name="txtbox1" TextWrapping="Wrap" Text="" Margin="20,260,64,-200"/>
+
+                <Label Content="FACEBOOK" HorizontalAlignment="Left" Margin="74,19,0,0" VerticalAlignment="Top" Height="44" Width="168" Foreground="#FFFBF7F7" FontWeight="Bold" FontSize="28"/>
+                <PasswordBox Name="Passbox2" Margin="20,312,64,-252" RenderTransformOrigin="0.488,1.808"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="14,28,0,0" VerticalAlignment="Top" Width="30" Height="22" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images\17047.png"/>
+                    </Button.Background>
+                </Button>
+
+            </Grid>
+
+
+
+
+
+        </ScrollViewer>
+    </Grid>
+</Page>

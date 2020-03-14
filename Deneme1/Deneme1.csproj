@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7C86FB3-3A54-4266-90E4-F9B213CB9E33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Deneme1</RootNamespace>
+    <AssemblyName>Deneme1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.XmlTransform, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="EKitap.xaml.cs">
+      <DependentUpon>EKitap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EKitapKategoriler.xaml.cs">
+      <DependentUpon>EKitapKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElektronikKategoriler.xaml.cs">
+      <DependentUpon>ElektronikKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookGiriş.xaml.cs">
+      <DependentUpon>FacebookGiriş.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HobiOyuncakKategoriler.xaml.cs">
+      <DependentUpon>HobiOyuncakKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KişiselÜrünKategoriler.xaml.cs">
+      <DependentUpon>KişiselÜrünKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KırtasiyeKategoriler.xaml.cs">
+      <DependentUpon>KırtasiyeKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MüzikKategoriler.xaml.cs">
+      <DependentUpon>MüzikKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OyunKonsolKategoriler.xaml.cs">
+      <DependentUpon>OyunKonsolKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sepet.xaml.cs">
+      <DependentUpon>Sepet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SporOutdoor.xaml.cs">
+      <DependentUpon>SporOutdoor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SporOutdoorKategoriler.xaml.cs">
+      <DependentUpon>SporOutdoorKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Arama.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Barkod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DRHakkında.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EKitap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EKitapKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Elektronik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElektronikKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FacebookGiriş.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Film.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FilmKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giriş.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GirişYap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HobiOyuncak.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HobiOyuncakKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KitapKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KişiselÜrün.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KişiselÜrünKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kırtasiye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KırtasiyeKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Arama.xaml.cs">
+      <DependentUpon>Arama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Barkod.xaml.cs">
+      <DependentUpon>Barkod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DR.xaml.cs">
+      <DependentUpon>DR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DRHakkında.xaml.cs">
+      <DependentUpon>DRHakkında.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elektronik.xaml.cs">
+      <DependentUpon>Elektronik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Film.xaml.cs">
+      <DependentUpon>Film.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FilmKategoriler.xaml.cs">
+      <DependentUpon>FilmKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş.xaml.cs">
+      <DependentUpon>Giriş.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GirişYap.xaml.cs">
+      <DependentUpon>GirişYap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HobiOyuncak.xaml.cs">
+      <DependentUpon>HobiOyuncak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap.xaml.cs">
+      <DependentUpon>Kitap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KitapKategoriler.xaml.cs">
+      <DependentUpon>KitapKategoriler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KişiselÜrün.xaml.cs">
+      <DependentUpon>KişiselÜrün.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kırtasiye.xaml.cs">
+      <DependentUpon>Kırtasiye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Müzik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MüzikKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OyunKonsol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OyunKonsolKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sepet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SporOutdoor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SporOutdoorKategoriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Müzik.xaml.cs">
+      <DependentUpon>Müzik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OyunKonsol.xaml.cs">
+      <DependentUpon>OyunKonsol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\17047.png" />
+    <Resource Include="images\arama-motoru-entegrasyonu-jpg.jpg" />
+    <Resource Include="images\barcode_PNG46.png" />
+    <Resource Include="images\gptHcXFhkJP51xtAYgX41555333584.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arrow-39098_960_720.png" />
+    <Resource Include="images\indir.png" />
+    <Resource Include="images\pfeil-links-clip-art-89963.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\246x0w.jpg" />
+    <Resource Include="images\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\0001796150001-1.jpg" />
+    <Resource Include="images\0001798747001-1.jpg" />
+    <Resource Include="images\24-246680_youtube-bell-icon-png-image-with-transparent-background %281%29.png" />
+    <Resource Include="images\24-246680_youtube-bell-icon-png-image-with-transparent-background.png" />
+    <Resource Include="images\5ade3d1a62fbe78d1be88e574d45c2c7-icono-de-campana-16-by-vexels.png" />
+    <Resource Include="images\9786053113959.png" />
+    <Resource Include="images\9786053115571.png" />
+    <Resource Include="images\9789752430990.png" />
+    <Resource Include="images\depositphotos_114828732-stock-illustration-bell-icon-vector-illustration %281%29.jpg" />
+    <Resource Include="images\depositphotos_114828732-stock-illustration-bell-icon-vector-illustration.jpg" />
+    <Resource Include="images\favorite-155494_960_720.png" />
+    <Resource Include="images\hayat-cesurlara-torpil-gecer.jpg" />
+    <Resource Include="images\ilber-ortayli-dan-hayata-dair-bir-klavuz-bir-11810910_o.jpg" />
+    <Resource Include="images\images %281%29.png" />
+    <Resource Include="images\images %282%29.png" />
+    <Resource Include="images\images %283%29.png" />
+    <Resource Include="images\images.png" />
+    <Resource Include="images\indir %281%29.jpg" />
+    <Resource Include="images\indir %282%29.jpg" />
+    <Resource Include="images\indir %283%29.jpg" />
+    <Resource Include="images\instagram-icon-1.png" />
+    <Resource Include="images\instagram-logo-grey.jpg" />
+    <Resource Include="images\instagram-logo-png-transparent-background-copy-grey.png" />
+    <Resource Include="images\Logos-Instagram-icon.png" />
+    <Resource Include="images\reorder-option.png" />
+    <Resource Include="images\Twitter-icon-gray.png" />
+    <Resource Include="images\twitter-logo-white-png.png" />
+    <Resource Include="images\zafer-sizlanarak-kazanilmaz47aa178c8055c03942c50782671e96fc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\04777006413690946194.jpg" />
+    <Resource Include="images\1200x630wp %281%29.png" />
+    <Resource Include="images\1200x630wp %282%29.png" />
+    <Resource Include="images\1280px-Reputation_Logo.svg.png" />
+    <Resource Include="images\220px-Maymunlar_Cehennemi_Başlangıç_afişi.jpg" />
+    <Resource Include="images\268x0w.png" />
+    <Resource Include="images\darb97e-634cd7d7-950f-4811-bc8b-629ea822cf57.png" />
+    <Resource Include="images\dawn.png" />
+    <Resource Include="images\demet-akalin-rakipsiz-albumu-kapak-1.png" />
+    <Resource Include="images\gurol-agirbas-bas-sarkilari-3-konser-300x160.jpg" />
+    <Resource Include="images\images %281%29.jpg" />
+    <Resource Include="images\indir %281%29.png" />
+    <Resource Include="images\indir %284%29.jpg" />
+    <Resource Include="images\indir %285%29.jpg" />
+    <Resource Include="images\nisan.jpg" />
+    <Resource Include="images\sen_a_lama_plak-400x399.jpg" />
+    <Resource Include="images\War-for-the-Planet-of-the-Apes.jpg" />
+    <Resource Include="images\ölümcül-makineler-indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\1200x630wp.png" />
+    <Resource Include="images\23nisan.png" />
+    <Resource Include="images\58de0167ea8cd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\avatar.png" />
+    <Resource Include="images\barcode.png" />
+    <Resource Include="images\loupe.png" />
+    <Resource Include="images\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bonus-300x144.png" />
+    <Resource Include="images\indir %282%29.png" />
+    <Resource Include="images\indir %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\9786051730400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\9786058488830.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\c06b488d139210c30ddf9d1fb575e2cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\9786059397056.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mate20-lite-listimage-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\160562513-origpic-d33ff4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\10105431719986.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Rafadan_Tayfa_Temali_Fotografli_Kopuk_Balon_16428.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Pf-Concept-11209700-Yazı-Tahtası-Kupa-c1c8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\KB8682169170057.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\frenchpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\manibux_kart_son_maskeli_1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\indir %286%29ss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\10091420549170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\9861104238642.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bestway-kaplumbaga-resimli-kolluk-23-x-15-cm-pompa__0174219518836894.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mybag-jean-akilli-valiz-kilifi-aaf4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\78380mor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcfServiceClient\WcfServiceClient.csproj">
+      <Project>{b029d87c-c78b-4e24-adcb-c1a99d641580}</Project>
+      <Name>WcfServiceClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
