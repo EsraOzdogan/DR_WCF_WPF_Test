@@ -1,0 +1,229 @@
+﻿<Page x:Class="Deneme1.OyunKonsol"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Deneme1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="310"
+      Title="OyunKonsol">
+    <Grid Margin="0,-14,10,-41">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="2,16,-9,-211">
+            <Grid Height="948" Width="308">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="373*"/>
+                    <RowDefinition Height="555*"/>
+                </Grid.RowDefinitions>
+
+
+
+                <DataGrid Height="70" Margin="-3,-11,-4,0" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.506,0.921" SelectionChanged="DataGrid_SelectionChanged">
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFDEF06C" Offset="0.87"/>
+                            <GradientStop Color="#FF107C15" Offset="1"/>
+                            <GradientStop Color="#FF40EC38" Offset="0.188"/>
+                            <GradientStop Color="#FF09FF1F" Offset="0.078"/>
+                            <GradientStop Color="#FF2CC533" Offset="0.48"/>
+                            <GradientStop Color="#FF09C300" Offset="0.391"/>
+                            <GradientStop Color="#FF00FF17" Offset="0.147"/>
+                            <GradientStop Color="#FF4AC504" Offset="0.22"/>
+                            <GradientStop Color="#FF80B91C" Offset="0.584"/>
+                            <GradientStop Color="#FF29B600" Offset="0.451"/>
+                            <GradientStop Color="#FF2BBF00" Offset="0.333"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
+                </DataGrid>
+                <Label Content="GERİ DÖN" HorizontalAlignment="Left" Margin="63,15,0,0" VerticalAlignment="Top" Height="30" Width="74" Background="{x:Null}" Foreground="#FFFBF8F8" FontWeight="Bold" FontFamily="Segoe Print" RenderTransformOrigin="-0.162,0.5"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="12,26,0,0" VerticalAlignment="Top" Width="31" Height="15" RenderTransformOrigin="-0.053,0.25" Click="Button_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/reorder-option.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="152,20,0,0" VerticalAlignment="Top" Width="19" Height="21" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="-0.594,0.6" Click="Button_Click_1">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/barcode.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="192,21,0,0" VerticalAlignment="Top" Width="22" Height="20" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_2" RenderTransformOrigin="-0.167,0.833">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/loupe.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="230,18,0,0" VerticalAlignment="Top" Width="28" Height="22" RenderTransformOrigin="0.305,0.299" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_6">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/shopping-cart.png"/>
+                    </Button.Background>
+                </Button>
+                <Menu IsMainMenu="True" Margin="-2,54,-8,37" Background="{x:Null}" Foreground="{x:Null}" Grid.RowSpan="2">
+
+
+
+
+
+
+
+
+
+
+
+                    <MenuItem Header="E-Kitap" Height="24" Width="150" FontWeight="Bold" Foreground="White" StaysOpenOnClick="True" Click="MenuItem_Click">
+
+                        <MenuItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                                <GradientStop Color="#FF017A2D" Offset="0.216"/>
+                                <GradientStop Color="#FFC9D117" Offset="0.702"/>
+                                <GradientStop Color="#FF368201" Offset="0.885"/>
+                                <GradientStop Color="#FF389134" Offset="0.926"/>
+                                <GradientStop Color="#FF3E5B47" Offset="0.903"/>
+                            </LinearGradientBrush>
+                        </MenuItem.Background>
+                    </MenuItem>
+
+
+
+
+
+
+
+
+
+
+
+                    <MenuItem Header="Kategoriler" Height="25" Width="154" Foreground="White" FontWeight="Bold" Click="MenuItem_Click_1">
+
+                        <MenuItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF567406" Offset="0"/>
+                                <GradientStop Color="#FF8CE210" Offset="0.814"/>
+                                <GradientStop Color="#FFA9E210" Offset="0.898"/>
+                                <GradientStop Color="#FFB3E30E" Offset="0.593"/>
+                            </LinearGradientBrush>
+                        </MenuItem.Background>
+                    </MenuItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </Menu>
+
+
+                <Label Content="Çok Satanlar" Margin="5,79,7,513" FontWeight="Bold" Grid.RowSpan="2"/>
+                <Grid Margin="146,37,41,284" Background="#FFCFCFCF" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="67*"/>
+                        <RowDefinition Height="17*"/>
+                    </Grid.RowDefinitions>
+                    <Button HorizontalAlignment="Left" Margin="14,15,0,0" VerticalAlignment="Top" Width="93" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="115" Click="Button_Click_15">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/10091420549170.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Label Content="15,00 TL" HorizontalAlignment="Left" Margin="22,164,0,0" VerticalAlignment="Top" Height="26" Width="74" FontWeight="Bold"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" Text="PaycellKart" VerticalAlignment="Top" FontWeight="Bold" Height="34" Width="89"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="18,3,0,0" VerticalAlignment="Top" Width="38" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_12" Grid.Row="1">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/indir (1).jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="62,199,0,0" VerticalAlignment="Top" Width="43" Height="27" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_13" Grid.RowSpan="2">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/5ade3d1a62fbe78d1be88e574d45c2c7-icono-de-campana-16-by-vexels.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                <Grid Margin="7,36,168,289" Background="#FFDCD6D6" Grid.Row="1">
+
+                    <Button Content="" HorizontalAlignment="Left" Margin="16,196,0,0" VerticalAlignment="Top" Width="30" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_7" RenderTransformOrigin="0.765,0.938">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/indir (1).jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" Margin="73,194,27,0" VerticalAlignment="Top" Height="35" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_8" RenderTransformOrigin="0.543,4.031">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/5ade3d1a62fbe78d1be88e574d45c2c7-icono-de-campana-16-by-vexels.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,143,0,0" TextWrapping="Wrap" Text="Papara Alışveriş Kartı" VerticalAlignment="Top" Height="31" Width="90" FontWeight="Bold" RenderTransformOrigin="0.5,0.069"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="14,17,0,0" VerticalAlignment="Top" Width="109" Height="117" Click="Button_Click_14">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/indir (6)ss.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Label Content="4,90 TL" HorizontalAlignment="Left" Margin="20,166,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                </Grid>
+
+                <Grid Margin="7,115,175,537" Background="#FFD4D1D1" Grid.RowSpan="2">
+
+
+
+                    <Button Content="" HorizontalAlignment="Left" Margin="5,32,0,0" VerticalAlignment="Top" Width="114" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="125" Click="Button_Click_12">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/manibux_kart_son_maskeli_1_.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" Click="Button_Click_4" Margin="62,239,16,0" VerticalAlignment="Top" Height="29" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.333,4.407">
+
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/5ade3d1a62fbe78d1be88e574d45c2c7-icono-de-campana-16-by-vexels.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+
+                <TextBlock TextWrapping="Wrap" Margin="24,285,186,63" FontWeight="Bold" Text="Manibux Alışveriş Kartı " RenderTransformOrigin="0.5,0.5">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-0.355"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-0.994"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Label Content="4,49 TL" FontWeight="Bold" Margin="31,317,193,30" RenderTransformOrigin="0.5,0.5"/>
+                <Button Content="" Margin="17,355,253,0" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.833,2.75" Click="Button_Click_3" Height="24" VerticalAlignment="Top">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/indir (1).jpg"/>
+                    </Button.Background>
+                </Button>
+                <Grid Width="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="148,117,41,536" Background="#FFD4D1D1" Grid.RowSpan="2">
+
+
+                    <TextBlock HorizontalAlignment="Left" Margin="19,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Height="34" Width="89" Text="Pc Football Manager 2019 "/>
+                    <TextBox HorizontalAlignment="Left" Height="18" Margin="16,208,-2,0" TextWrapping="Wrap" Text="89,90 TL" VerticalAlignment="Top" Width="105" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+                    <Button Content="" HorizontalAlignment="Left" Click="Button_Click_5" Margin="20,241,0,0" VerticalAlignment="Top" Width="35" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="23" RenderTransformOrigin="0.308,1.75">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/indir (1).jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left"  Margin="62,239,0,21" Width="44" RenderTransformOrigin="-0.226,-0.485" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_5">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/5ade3d1a62fbe78d1be88e574d45c2c7-icono-de-campana-16-by-vexels.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="8,27,0,0" VerticalAlignment="Top" Width="102" Height="127" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_13">
+                        <Button.Background>
+                            <ImageBrush ImageSource="images/indir (6)f.jpg"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

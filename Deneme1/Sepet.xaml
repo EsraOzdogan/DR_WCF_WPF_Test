@@ -1,0 +1,80 @@
+﻿<Page x:Class="Deneme1.Sepet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Deneme1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="310"
+      Title="Sepet">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Foreground="{x:Null}" Margin="0,-8,2,0" >
+            <Grid Height="477">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="73*"/>
+                    <ColumnDefinition Width="216*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="460*"/>
+                    <RowDefinition Height="17*"/>
+                </Grid.RowDefinitions>
+                <DataGrid Height="56" Margin="-9,-4,4,0" VerticalAlignment="Top" Foreground="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.506,0.921" Grid.ColumnSpan="3">
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFDE6CF0" Offset="0.87"/>
+                            <GradientStop Color="#FF493491" Offset="1"/>
+                            <GradientStop Color="#FF36266C" Offset="0.188"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
+                </DataGrid>
+                <Label Content="GERİ DÖN" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Height="30" Width="74" Background="{x:Null}" Foreground="#FFFBF8F8" FontWeight="Bold" FontFamily="Segoe Print" RenderTransformOrigin="-0.162,0.5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Width="34" Height="24" RenderTransformOrigin="-0.053,0.25" Click="Button_Click" Grid.ColumnSpan="2" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/pfeil-links-clip-art-89963.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="SEPETİM" Grid.Column="1" HorizontalAlignment="Left" Margin="44,52,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Height="58" Width="174" FontSize="36"/>
+                <Button Content="SATIN AL" Grid.Column="1" HorizontalAlignment="Left" Margin="2,201,0,0" VerticalAlignment="Top" Width="236" Height="32" Background="#FFF91A1A" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+                <Grid Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="97" Margin="6,240,0,0" VerticalAlignment="Top" Width="232" Background="#FFD1CACA">
+                    <Label Content="" HorizontalAlignment="Left" Margin="39,0,0,68" VerticalAlignment="Bottom" Height="23" Width="116">
+                        <Label.Background>
+                            <ImageBrush ImageSource="images/bonus-300x144.png"/>
+                        </Label.Background>
+                    </Label>
+                    <Label Content="" HorizontalAlignment="Left" Margin="117,34,0,40" RenderTransformOrigin="1.04,8.768" Width="110" FontWeight="Bold" Background="#FFC39393">
+
+                    </Label>
+                    <Label Content="Toplam Tutar" HorizontalAlignment="Left" Margin="0,32,0,39" RenderTransformOrigin="1.04,8.768" Width="109" FontWeight="Bold" Background="#FFC39393">
+                    </Label>
+
+
+                </Grid>
+                <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="192" Margin="2,348,0,-63" VerticalAlignment="Top" Width="239" Grid.RowSpan="2" Background="#FFD1CACA" Grid.Column="1">
+                    <Label Content="" HorizontalAlignment="Left" Margin="57,0,0,151" VerticalAlignment="Bottom" Height="38" Width="116">
+                        <Label.Background>
+                            <ImageBrush ImageSource="images/indir (2).png"/>
+                        </Label.Background>
+                    </Label>
+                    <Label Content="Tutar" HorizontalAlignment="Left" Margin="129,47,0,122" RenderTransformOrigin="1.04,8.768" Width="100" FontWeight="Bold" Background="#FFC39393">
+
+                    </Label>
+                    <Label Content="Taksit" HorizontalAlignment="Left" Margin="6,47,0,122" RenderTransformOrigin="1.04,8.768" Width="114" FontWeight="Bold" Background="#FFC39393">
+
+                    </Label>
+
+
+                </Grid>
+                <Label Content="TL" Grid.Column="2" HorizontalAlignment="Right" Margin="0,155,31,0" VerticalAlignment="Top" FontWeight="Bold" Height="41" Width="42" FontSize="24"/>
+                <Label Name="spt1" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="47,155,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="41" Width="83" FontSize="24"/>
+
+
+
+            </Grid>
+        </ScrollViewer>
+
+
+
+    </Grid>
+</Page>

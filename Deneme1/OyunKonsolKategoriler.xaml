@@ -1,0 +1,87 @@
+﻿<Page x:Class="Deneme1.OyunKonsolKategoriler"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Deneme1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="310"
+      Title="OyunKonsolKategoriler">
+
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,3,-4,0">
+            <Grid>
+                <DataGrid HorizontalAlignment="Left" Height="82" Margin="-2,-15,0,0" VerticalAlignment="Top" Width="314" Foreground="{x:Null}" SelectionChanged="DataGrid_SelectionChanged">
+                    <DataGrid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFDEF06C" Offset="0.87"/>
+                            <GradientStop Color="#FF107C15" Offset="1"/>
+                            <GradientStop Color="#FF40EC38" Offset="0.188"/>
+                            <GradientStop Color="#FF09FF1F" Offset="0.078"/>
+                            <GradientStop Color="#FF2CC533" Offset="0.48"/>
+                            <GradientStop Color="#FF09C300" Offset="0.391"/>
+                            <GradientStop Color="#FF00FF17" Offset="0.147"/>
+                            <GradientStop Color="#FF4AC504" Offset="0.22"/>
+                            <GradientStop Color="#FF80B91C" Offset="0.584"/>
+                            <GradientStop Color="#FF29B600" Offset="0.451"/>
+                            <GradientStop Color="#FF2BBF00" Offset="0.333"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Background>
+                </DataGrid>
+                <Button Content="" HorizontalAlignment="Left" Margin="11,11,0,0" VerticalAlignment="Top" Width="30" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/reorder-option.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="145,8,0,0" VerticalAlignment="Top" Width="40" Height="30" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/barcode.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="204,9,0,0" VerticalAlignment="Top" Width="41" Height="30" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_2" RenderTransformOrigin="-3.366,31.115">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/loupe.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="" HorizontalAlignment="Left" Margin="248,11,0,0" VerticalAlignment="Top" Width="34" Height="29" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_7">
+                    <Button.Background>
+                        <ImageBrush ImageSource="images/shopping-cart.png"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="GERİ DÖN" HorizontalAlignment="Left" Margin="61,13,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="WhiteSmoke"/>
+
+                <Menu IsMainMenu="True" HorizontalAlignment="Left" Height="316" Margin="-2,64,0,0" VerticalAlignment="Top" Width="311" RenderTransformOrigin="0.5,0.5" Background="{x:Null}">
+                    <MenuItem Header="Oyun Konsol" Width="160" Height="30" Click="MenuItem_Click">
+                        <MenuItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                                <GradientStop Color="#FF017A2D" Offset="0.216"/>
+                                <GradientStop Color="#FFC9D117" Offset="0.702"/>
+                                <GradientStop Color="#FF368201" Offset="0.885"/>
+                                <GradientStop Color="#FF389134" Offset="0.926"/>
+                                <GradientStop Color="#FF3E5B47" Offset="0.903"/>
+                            </LinearGradientBrush>
+                        </MenuItem.Background>
+
+                    </MenuItem>
+                    <MenuItem Header="Kategoriler" Width="151" Height="26">
+                        <MenuItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF567406" Offset="0"/>
+                                <GradientStop Color="#FF8CE210" Offset="0.814"/>
+                                <GradientStop Color="#FFA9E210" Offset="0.898"/>
+                                <GradientStop Color="#FFB3E30E" Offset="0.593"/>
+                            </LinearGradientBrush>
+                        </MenuItem.Background>
+                    </MenuItem>
+                </Menu>
+
+                <Button Content="Oyun Konsollar" HorizontalAlignment="Left" Margin="-195,93,0,0" VerticalAlignment="Top" Width="504" Height="37" Background="{x:Null}" BorderBrush="#FFC5C5C5" FontWeight="Bold" Click="Button_Click_3"/>
+                <Button Content="Oyun Aksesuarları" HorizontalAlignment="Left" Margin="-208,197,-20,0" VerticalAlignment="Top" Width="538" Height="34" Background="{x:Null}" FontWeight="Bold" Click="Button_Click_6"/>
+                <Button Content="Koleksiyon Ürünleri" HorizontalAlignment="Left" Margin="-195,164,-12,0" VerticalAlignment="Top" Width="517" Height="34" Background="{x:Null}" FontWeight="Bold" Click="Button_Click_5"/>
+                <Button Content="Oyunlar" HorizontalAlignment="Left" Margin="-247,130,-15,0" VerticalAlignment="Top" Width="572" Height="34" Background="{x:Null}" FontWeight="Bold" Click="Button_Click_4"/>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
